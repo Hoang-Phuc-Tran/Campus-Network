@@ -1,56 +1,69 @@
 ![Screenshot 2024-11-20 143905](https://github.com/user-attachments/assets/771aa91a-d783-40ef-9836-c3c438946ae1)
 
-# University Campus Network Configuration
+# University Network Topology Configuration
 
-## Main Campus
-- **Building A**: 
-  - Houses administrative staff from the departments of management, HR, and finance. 
-  - PCs are distributed in office spaces and share networking equipment (VLANs are implemented here).
-  - The **Faculty of Business** is also located in this building.
-
-- **Building B**: 
-  - Houses the **Faculty of Engineering and Computing** and the **Faculty of Art and Design**.
-
-- **Building C**: 
-  - Contains student labs and the IT department.
-  - The IT department hosts the **University Web Server** and other servers.
-  - An email server is hosted externally on the cloud.
-
-## Smaller Campus
-- **Faculty of Health and Sciences**: 
-  - Staff and student labs are located on separate floors.
-
-## Network Requirements
-1. Each department/faculty is assigned its own **separate IP network**.
-2. **VLANs** are created and configured on switches for segmentation and security.
-3. **RIPv2** is used for routing within the internal network, while static routing is configured for external servers.
-4. Devices in **Building A** acquire dynamic IP addresses via a **router-based DHCP server**.
-5. The entire network is configured using **Cisco Packet Tracer** to achieve the specified connectivity and functionalities.
+This project involves designing a network topology for a large university with two campuses situated 20 miles apart. The university serves students and staff across four faculties: **Health and Sciences**, **Business**, **Engineering/Computing**, and **Art/Design**. Each staff member has a dedicated PC, while students access PCs in designated labs.
 
 ---
 
-## Technologies Implemented
+## **University Location and Network Layout**
+
+### **Main Campus**
+1. **Building A**:
+   - Administrative staff in **management**, **HR**, and **finance** departments. PCs for administrative staff are distributed across offices and share networking equipment (**VLANs implemented** here).
+   - Houses the **Faculty of Business**.
+
+2. **Building B**:
+   - Home to the **Faculty of Engineering and Computing** and the **Faculty of Art and Design**.
+
+3. **Building C**:
+   - Contains **student labs** and the **IT department**.
+   - The IT department hosts the **University Web Server** and other on-premises servers.
+   - An **email server** is hosted externally on the cloud.
+
+### **Smaller Campus**
+- Dedicated to the **Faculty of Health and Sciences**, with:
+  - Staff offices and student labs located on separate floors.
+
+---
+
+## **Network Requirements**
+- Each **faculty/department** operates on its own **separate IP network**.
+- Switches are configured with **VLANs** and **security settings** for traffic segmentation.
+- **RIPv2** is implemented to route traffic within the internal network.
+- **Static routing** is used for external server connectivity.
+- Devices in **Building A** are configured to acquire **dynamic IP addresses** from a **router-based DHCP server**.
+- The network is built and configured in **Cisco Packet Tracer**.
+
+---
+
+## **Technologies Implemented**
 - **Network Topology Design** using Cisco Packet Tracer.
 - **Hierarchical Network Design** principles.
-- **Connecting Networking Devices** with appropriate cabling.
-- **Creating VLANs** and assigning ports VLAN numbers.
-- **Subnetting and IP Addressing** for optimal network performance.
-- **Inter-VLAN Routing** using a router-on-a-stick configuration.
-- Configuring a **DHCP Server** (router-based).
-- Configuring **SSH** for secure remote access.
-- Implementing **RIPv2** as the dynamic routing protocol.
-- Enforcing **Switchport Security (Port-Security)** on switches.
-- Configuring **Host Devices** for network communication.
-- **Testing and Verifying** network communication to ensure functionality.
+- Proper **cabling and device connectivity**.
+- **VLAN Configuration** and assigning ports to VLANs.
+- **Subnetting and IP Addressing** to optimize network performance.
+- **Inter-VLAN Routing** using the **router-on-a-stick** method.
+- **DHCP Server Configuration** (router as DHCP server).
+- **SSH Configuration** for secure remote access to network devices.
+- **RIPv2 Configuration** as the dynamic routing protocol.
+- **Switchport Security** for enhanced port-level protection.
+- **Host Device Configurations** (PCs, servers, etc.).
+- **Testing and Verifying Network Communication** to ensure functionality.
 
 ---
 
-## Network Topology Created
-The network topology adheres to all user requirements, and its functionality has been verified and tested successfully. 
+## **Network Design Summary**
+The designed network topology meets all the specified requirements:
+1. **Faculty and department-level segmentation** using VLANs.
+2. Dynamic IP address allocation for devices in **Building A**.
+3. Secure communication through **SSH**.
+4. Routing within the network handled by **RIPv2**.
+5. Reliable connectivity to external servers using **static routes**.
 
-### Preview:
-The network diagram and setup in Cisco Packet Tracer demonstrate the following:
-1. VLAN segmentation for departmental security and traffic management.
-2. DHCP server functionality for dynamic IP assignment.
-3. Proper routing between VLANs using RIPv2.
-4. Secure and efficient connectivity between devices across the network.
+---
+
+## **Deliverables**
+- **Network Topology**: The network has been designed, verified, and tested successfully in **Cisco Packet Tracer**.
+- **Source File**: Access the Packet Tracer file for the complete network configuration.
+- **Demo Video**: Watch a step-by-step walkthrough of the setup.
