@@ -1,5 +1,9 @@
 ![Screenshot 2024-11-20 143905](https://github.com/user-attachments/assets/771aa91a-d783-40ef-9836-c3c438946ae1)
 
+
+https://github.com/user-attachments/assets/ed17000a-1278-475b-a565-27f747e28414
+
+
 # University Network Topology Configuration
 
 This project involves designing a network topology for a large university with two campuses situated 20 miles apart. The university serves students and staff across four faculties: **Health and Sciences**, **Business**, **Engineering/Computing**, and **Art/Design**. Each staff member has a dedicated PC, while students access PCs in designated labs.
